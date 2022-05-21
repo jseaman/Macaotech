@@ -1,0 +1,5 @@
+*.o
+*.nes
+*.rom
+Atari/ROMs/
+NES/demos/.vscode
