@@ -91,6 +91,12 @@ irq: irq.o $(REQ_BINARIES) $(CHR_VACHE_TEST)
 	$(LINKER) $@.o $(REQ_BINARIES) $(CHR_VACHE_TEST) $(LIBS) $(CFG) $(HOR_MIRROR) $(PARAMS) -o $(OUTPUT)/$@.nes
 	@echo "-------------------------------"	
 
+lightgun: lightgun.o $(REQ_BINARIES) $(CHR_SET3)
+	@echo "-------------------------------"
+	@echo "Linking"
+	$(LINKER) $@.o $(REQ_BINARIES) $(CHR_SET3) $(LIBS) $(CFG) $(HOR_MIRROR) $(PARAMS) -o $(OUTPUT)/$@.nes
+	@echo "-------------------------------"	
+
 %.o: %.s 
 	@echo "-------------------------------"
 	@echo "Assembling " $< 
