@@ -97,6 +97,12 @@ lightgun: lightgun.o $(REQ_BINARIES) $(CHR_SET3)
 	$(LINKER) $@.o $(REQ_BINARIES) $(CHR_SET3) $(LIBS) $(CFG) $(HOR_MIRROR) $(PARAMS) -o $(OUTPUT)/$@.nes
 	@echo "-------------------------------"	
 
+thx: thx.o $(REQ_BINARIES) $(CHR_SET3)
+	@echo "-------------------------------"
+	@echo "Linking"
+	$(LINKER) $@.o $(REQ_BINARIES) $(CHR_SET3) $(LIBS) $(CFG) $(HOR_MIRROR) $(PARAMS) -o $(OUTPUT)/$@.nes
+	@echo "-------------------------------"	
+
 %.o: %.s 
 	@echo "-------------------------------"
 	@echo "Assembling " $< 

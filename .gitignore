@@ -1,5 +1,8 @@
 *.o
 *.nes
 *.rom
+*.s
+*.elf
 Atari/ROMs/
 NES/demos/.vscode
+GBA/VisualBoyAdvance/
